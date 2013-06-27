@@ -50,5 +50,5 @@ Discussion
 
 * on Coursera
 
-[![Build Status](https://travis-ci.org/AcricanBTCExchange/AcricanBTCExchange.png)](https://travis-ci.org/AcricanBTCExchange/AcricanBTCExchange)
+[![Build Status](https://travis-ci.org/setrar/AfricanBTCExchange.png)](https://travis-ci.org/setrar/AfricanBTCExchange)
 
