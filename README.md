@@ -46,6 +46,10 @@ Discussion
 
 [![Build Status](https://travis-ci.org/setrar/AfricanBTCExchange.png)](https://travis-ci.org/setrar/AfricanBTCExchange)
 
+* UI Editor
+
+This project uses Twitter Bootstrap and is being edited with jetstrap.com
+
 ## Credits
 
 Author: <TBD>
