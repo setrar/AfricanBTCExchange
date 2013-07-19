@@ -1,11 +1,15 @@
 {
-  "name": "African BTC Exchange",
+  "name": "AfricanBTCExchange",
   "version": "0.0.1",
   "dependencies": {
     "express": "2.5.x"
   },
   "engines": {
-    "node": "0.8.x",
+    "node": "0.10.x",
     "npm": "1.1.x"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/setrar/AfricanBTCExchange.git"
   }
 }
