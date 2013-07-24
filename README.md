@@ -39,6 +39,13 @@ submit new unit tests for old code.
 
 Unit tests for the core code are in `test/`. 
 
+Running
+-------
+
+### in background 
+
+```$ nohup node web.js```
+
 Discussion
 ----------
 
