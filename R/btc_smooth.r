@@ -60,10 +60,10 @@ btcusd.rate <- btcusd.rate[!is.weekend(time(btcusd.rate))]
 
 # create merged time series
 usdmga_btcusd.rate = merge(usdmga.rate, btcusd.rate)
-plot(usdmga_btcusd.rate, lwd=c(2,2), plot.type="multiple", col=c("green", "blue"), lty=c("solid", "dotted"), ylab=c("USD/MGA", "BTC/USD"), main="")
+plot(usdmga_btcusd.rate, lwd=c(2,2), plot.type="multiple", col=c("green", "blue"), lty=c("solid", "dotted"), ylab=c("USD/MGA", "BTC/USD"), main="2012/2013 Exchange Rate Comparison")
 
 usdmga_btcusd.lret = merge(usdmga.lret, btcusd.lret)
-plot(usdmga_btcusd.lret, lwd=c(2,2), plot.type="multiple", col=c("black", "blue"), lty=c("solid", "dotted"), ylab=c("USD/MGA", "EUR/MGA"), main="")
+plot(usdmga_btcusd.lret, lwd=c(2,2), plot.type="multiple", col=c("black", "blue"), lty=c("solid", "dotted"), ylab=c("USD/MGA", "BTC/USD"), main="2012/2013 Log Return Comparison")
 
 plot(usdmga.lret,type="l",lty="solid", lwd = 1, col = "blue", ylab = "Log Return")
 lines(btcusd.lret, lty = "solid", lwd = 1, col = "red")
