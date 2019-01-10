@@ -37,8 +37,8 @@ Retrieve a currency pairs, we use data provided by quandl
 
 
 ```
-> dates <- as.Date(bitstampusd$data[,1],format="%Y-%m-%d")
-> rates <- as.numeric(bitstampusd$data[,5])
+> dates <- as.Date(bitsusd$data[,1],format="%Y-%m-%d")
+> rates <- as.numeric(bitsusd$data[,5])
 ```
 
 Let's plot some data
