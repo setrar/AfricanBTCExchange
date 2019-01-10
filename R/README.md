@@ -24,7 +24,7 @@ Descriptive statistics and probability distributions
 
 Retrieve a currency pairs, we use data provided by quandl
 
-* BIT/USD
+* BTC/USD
 
 ```
 > bitsusd <- fromJSON(txt='https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc')
