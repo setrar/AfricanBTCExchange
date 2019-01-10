@@ -27,14 +27,15 @@ Retrieve a currency pairs, we use data provided by quandl
 * BTC/USD
 
 ```
-> btcsusd <- fromJSON(txt='https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc')
+> btcurl <- 'https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc'
+> btcusd <- fromJSON(txt=url)
 ```
 
 
 
 ```
-> dates <- as.Date(btcsusd$data[,1],format="%Y-%m-%d")
-> rates <- as.numeric(btcsusd$data[,5])
+> dates <- as.Date(btcusd$data[,1],format="%Y-%m-%d")
+> rates <- as.numeric(btcusd$data[,5])
 ```
 
 Let's plot some data
