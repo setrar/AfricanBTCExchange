@@ -12,7 +12,7 @@ Descriptive statistics and probability distributions
 * [Install R](https://cran.r-project.org/)
 
 
-## Using jsonlite et Curl
+## Using jsonlite et Curl to retrieve data
 
 ```
 > install.packages("jsonlite")
@@ -22,11 +22,21 @@ Descriptive statistics and probability distributions
 
 ## Analysis
 
-To retrieve a currency pair, for example the Bitcoin against the US Dollar, we use data provided by quandl
+Retrieve a currency pairs, we use data provided by quandl
+
+* USD/MGA
+
+* EUR/MGA
+
+* BIT/USD
 
 ```
-> url <- 'https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc'
-> bitstampusd <- fromJSON(txt=url)
+> bitsusd <- fromJSON(txt='https://www.quandl.com/api/v1/datasets/BCHARTS/BITSTAMPUSD.json?&trim_start=2013-09-01&trim_end=2014-12-10&sort_order=asc')
+```
+
+
+
+```
 > dates <- as.Date(bitstampusd$data[,1],format="%Y-%m-%d")
 > rates <- as.numeric(bitstampusd$data[,5])
 ```
