@@ -43,7 +43,7 @@ Let's plot some data
 > plot(dates,rates)
 ```
 
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot.png)
+![image](./images/rplot.png)
 
 Let's use some Continuous Compounded Return data by adding parameter retclass="ts" (Zoo class might be better)
 
@@ -53,7 +53,7 @@ Let's use some Continuous Compounded Return data by adding parameter retclass="t
 
 Probability Density Function
 
-To Create the ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/fx.png) function of returns, I use the diff function to calculate ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/lg.png) from ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/r.png)
+To Create the ![image](./images/fx.png) function of returns, I use the diff function to calculate ![image](./images/lg.png) from ![image](./images/r.png)
 
 ```
 > btc.pdf <- log(lag(btc.ts))-log(btc.ts)
@@ -65,18 +65,18 @@ or
 > btc.pdf <- diff(log(btc.ts))
 ```
 
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot01.png)
+![image](./images/rplot01.png)
 
 Some Descriptive Statistics:
 
-The mean ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/m.png)
+The mean ![image](./images/m.png)
 
 ```
 > mean(btc.pdf)
 [1] 0.006749139
 ```
 
-The Variance ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/s_2.png)
+The Variance ![image](./images/s_2.png)
 
 ```
 > var(btc.pdf)
@@ -85,7 +85,7 @@ The Variance ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master
 
 As you can see a +.15% average return is not that interesting but again I believe Bitcoin Virtual Currency is still the way to go.
 
-The Standard Deviation ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/s.png)
+The Standard Deviation ![image](./images/s.png)
 
 ```
 > sd(btc.pdf)
@@ -111,7 +111,7 @@ Analysing data
 [1] 7.774766
 ```
 
-Finally some Bell Curve Equation ![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/bc.png)
+Finally some Bell Curve Equation ![image](./images/bc.png)
 
 Showing that Bitcoin still has fat tails a good candidate for Black Swan Theory.
 
@@ -119,4 +119,4 @@ Showing that Bitcoin still has fat tails a good candidate for Black Swan Theory.
 > chart.Histogram(btc.pdf)
 ```
 
-![alt tag](https://github.com/CollegeBoreal/INF1069-17H/blob/master/Z.BITSTAMP/rplot02.png)
+![image](./images/rplot02.png)
