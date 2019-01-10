@@ -24,10 +24,6 @@ Descriptive statistics and probability distributions
 
 Retrieve a currency pairs, we use data provided by quandl
 
-* USD/MGA
-
-* EUR/MGA
-
 * BIT/USD
 
 ```
